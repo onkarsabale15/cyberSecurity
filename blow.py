@@ -28,7 +28,7 @@ class BlowfishCipher:
         plaintext = self.cipher.decrypt(ciphertext[self.block_size:])
         return self.unpad(plaintext)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     # Replace 'your_secret_key' with your actual secret key
     secret_key = b'your_secret_key'
     Cipher = BlowfishCipher(secret_key)
